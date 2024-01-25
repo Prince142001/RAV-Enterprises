@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navigation-bar.css">
+    <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+    <link rel="stylesheet" href="css/scroll-to-top.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-nav">
+            <div class="left-element">
+                <h3>10 plus year of experience</h3>
+            </div>
+            <div class="right-element">
+                <div class="phone-call">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+                        <path fill="#f7f7f7"
+                            d="m222.37 158.46l-47.11-21.11l-.13-.06a16 16 0 0 0-15.17 1.4a8.12 8.12 0 0 0-.75.56L134.87 160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16 16 0 0 0 1.32-15.06v-.12L97.54 33.64a16 16 0 0 0-16.62-9.52A56.26 56.26 0 0 0 32 80c0 79.4 64.6 144 144 144a56.26 56.26 0 0 0 55.88-48.92a16 16 0 0 0-9.51-16.62ZM176 208A128.14 128.14 0 0 1 48 80a40.2 40.2 0 0 1 34.87-40a.61.61 0 0 0 0 .12l21 47l-20.67 24.74a6.13 6.13 0 0 0-.57.77a16 16 0 0 0-1 15.7c9.06 18.53 27.73 37.06 46.46 46.11a16 16 0 0 0 15.75-1.14a8.44 8.44 0 0 0 .74-.56L168.89 152l47 21.05h.11A40.21 40.21 0 0 1 176 208Z" />
+                    </svg>
+                    <span><a href="tel:9653673294">+91-9653673294</a></span>
+                </div>
+                <div class="mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+                        <g fill="#f7f7f7">
+                            <path d="m224 56l-96 88l-96-88Z" opacity=".2" />
+                            <path
+                                d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8Zm-96 85.15L52.57 64h150.86ZM98.71 128L40 181.81V74.19Zm11.84 10.85l12 11.05a8 8 0 0 0 10.82 0l12-11.05l58 53.15H52.57ZM157.29 128L216 74.18v107.64Z" />
+                        </g>
+                    </svg>
+                    <span><a href="mailto:prince.pv.14.2000@gmail.com?subject = Feedback&body = Message">
+                            prince.pv.14.2000@gmail.com
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar-container">
+            <a href="index.html" class="home-link">
+                <!-- <img src="images/logo.png" alt=""> -->
+                Company Logo
+            </a>
+            <button class="navbar-toggle" id="navbar-toggle" aria-controls="navbar-menu" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+            <ul id="navbar-menu" class="navbar-menu" data-visible="false">
+                <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html#rav-highlights">Services</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="about-us.html">About Us</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <script>
+                    document.querySelector(".breadcrumb li:last-child").innerHTML = document.title;
+                </script>
+            </li>
+        </ul>
+
+        <section class="c-us-section">
+            <picture>
+                <img src="images/rav-contact-us.svg" alt="">
+            </picture>
+            <form action="https://formsubmit.co/5791d37766ff93a0b25b5dc797011547" method="POST" class="c-us-form">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://raventerprises.sunoshayari.com/thank-you.html">
+                <div class="input-box user-name">
+                    <label for="Name">name</label>
+                    <input type="text" id="user-name" name="Name" placeholder="Enter your name" required>
+                </div>
+                <div class="c-us-column user-phone-number">
+                    <div class="input-box user-email">
+                        <label for="E-mail">E-mail</label>
+                        <input type="email" id="user-email" name="E-mail" placeholder="E-mail" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Phone Number">mobile</label>
+                        <input type="number" id="user-phone-number" name="Phone&nbsp;Number" placeholder="Phone number"
+                            required>
+                    </div>
+                </div>
+                <div class="select-box">
+                    <label for="Phone Number">Select which service you want</label>
+                    <select class="js-example-basic-multiple-limit" multiple required name="option">
+                        <option hidden disabled>Select Option</option>
+                        <option>National Institute of Technology, Tiruchirappalli</option>
+                        <option>National Institute of Technology, Surathkal</option>
+                        <option>National Institute of Technology, Warangal</option>
+                        <option>National Institute of Technology, Kurukshetra</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="Query">enter your query</label>
+                    <textarea name="Query" id="textarea" cols="30" rows="3"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div class="read-privacy-policy">
+                <a href="privacy-policy.html">read privacy policy</a>
+            </div>
+        </section>
+
+        <section class="vos-section" id="vos-section">
+            <header>
+                <h1>visit our shops</h1>
+            </header>
+
+            <div class="shops-column">
+                <div class="pw-shop-column">
+                    <div class="pw-shop-location">
+                        <header>
+                            <h1>yes plywood</h1>
+                        </header>
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2285.217081551055!2d73.01610932574486!3d19.074348941832163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1289eed81d7%3A0x7d02b63ecb9dd48a!2sYes%20Plywood!5e0!3m2!1sen!2sin!4v1689645441846!5m2!1sen!2sin"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hw-shop-column">
+                    <div class="hw-shop-location">
+                        <header>
+                            <h1>vishwakarma hardware</h1>
+                        </header>
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3290885506963!2d72.92990337533685!3d19.049263282149827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7d7f3b88ce5%3A0x3099c6ce4a02e79e!2sVishwakarma%20Hardware!5e0!3m2!1sen!2sin!4v1688605965923!5m2!1sen!2sin"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button aria="Scroll To Top" class="scroll-to-top">
+            <svg id="progress-value" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+                <path fill="#fff"
+                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11z" />
+            </svg>
+        </button>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-ts">
+            <div class="website fts-column">
+                <div class="company-logo">RAV Enterprises</div>
+                <article>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusamus illo eaque ipsum, odio,
+                    tempore atque aut explicabo mollitia impedit officia? Distinctio dolor voluptate rerum dolorum sequi
+                    quo
+                    odio maxime optio voluptatem necessitatibus hic adipisci dolorem illum cumque soluta aliquam
+                    voluptatibus voluptas, error rem aut fugiat quae! Veniam, corrupti culpa.
+                </article>
+            </div>
+            <div class="sevices fts-column">
+                <header>
+                    <h2>our services</h2>
+                </header>
+                <ul>
+                    <li>Full Home Interior</li>
+                    <li>Bedroom Interior</li>
+                    <li>Living Room Interior</li>
+                    <li>Painting Interior</li>
+                    <li>Kitchen Interior</li>
+                    <li>Interior Renovation</li>
+                </ul>
+            </div>
+            <div class="compnay fts-column">
+                <header>
+                    <h2>compnay</h2>
+                </header>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about-us.html">about us</a></li>
+                    <li><a href="contact-us.html">contact us</a></li>
+                    <li><a href="privacy-policy.html">privacy policy</a></li>
+                    <li><a href="#">terms condition</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bs">
+            <div class="left-element">
+                <h3>copyright &copy; 2023 RAV Enterprises</h3>
+            </div>
+            <div class="right-element">
+                <h3>website were developed by <span><a href="https://zonetocode.com/"
+                            target="_blank">ZonetoCode</a>&nbsp;</span></h3>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navigation-bar.js" defer></script>
+    <!-- <script src="js/contact-us.js" defer></script> -->
+    <script src="js/scroll-to-top.js"></script>
+    <!-- <script src="js/cu-product-list.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/product-slideshow.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(".js-example-basic-multiple-limit").select2({
+            placeholder: 'This is my placeholder',
+            allowClear: true
+        });
+    </script>
+
+</body>
+
+</html>

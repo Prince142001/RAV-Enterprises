@@ -1,0 +1,45 @@
+/* ---------------------------- Breadcrumb --------------------------- */
+ul.breadcrumb {
+  margin: 3rem auto 0;
+  max-width: 1300px;
+  width: 100%;
+  position: relative;
+  /* float: right; */
+  width: 100%;
+  padding: 10px 16px;
+  list-style: none;
+  /* background-image: linear-gradient(to left, #eaeded 30%, #fff 70%); */
+  background-color: #fff;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  height: fit-content;
+  overflow: hidden;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color-hover);
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: var(--main-color-hover);
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  text-decoration: none;
+  color: var(--main-color-hover);
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+/* ---------------------------- Breadcrumb for "Product Detail Pages" --------------------------- */
+.product__detail__pages ul.breadcrumb {
+  margin-top: 75px;
+}

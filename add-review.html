@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/scroll-to-top.css">
+
+    <title>Add Review | RAV Enterprises</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="rav-logo">
+            <a href="index.html" class="home-link">Company Logo</a>
+        </div>
+    </header>
+    <main>
+        <header>
+            <h1>Please add you review</h1>
+        </header>
+        <div class="review-column">
+            <picture>
+                <img src="images/review.png" alt="">
+            </picture>
+            <form action="https://formsubmit.co/5791d37766ff93a0b25b5dc797011547" method="POST" class="c-us-form"
+                enctype="multipart/form-data">
+                <input type="hidden" name="_subject" value="New Review!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://raventerprises.sunoshayari.com/">
+                <div class="input-box user-name">
+                    <label for="Name">name</label>
+                    <input type="text" id="user-name" name="Name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box user-name">
+                    <label for="Profession">profession</label>
+                    <input type="text" id="user-profession" name="Profession" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <label for="Query">Write some message</label>
+                    <textarea name="Query" id="textarea" cols="30" rows="3" required></textarea>
+                </div>
+
+                <div class="form-column">
+                    <div class="user-avatar">
+                        <input type="file" accept="image/jpeg, image/jpg, image/png" id="user-avatar" name="attachment"
+                            required>
+                        <figure>
+                            <img src="images/avatar.png" alt="user avatar">
+                        </figure>
+                        <label for="user-avatar">upload your avatar</label>
+                        <!-- <input type="file" accept="image/jpeg, image/jpg, image/png" id="user-avatar" name="Avatar"
+                            required>
+                        <figure>
+                            <img src="images/avatar.png" alt="user avatar">
+                        </figure>
+                        <label for="user-avatar">upload your avatar</label>
+                        <input type="hidden" name="_attachment" value="Avatar"> -->
+                    </div>
+
+                    <div class="rating-star">
+                        <header>
+                            <h3>Rate Us</h3>
+                        </header>
+
+                        <div class="stars">
+                            <div class="star swr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#0f172a"
+                                        d="m19.555 23.411l-6.664-3.285a1.261 1.261 0 0 0-1.202.045l.006-.003l-6.416 3.75a.61.61 0 0 1-.902-.626v.003l.994-7.542a1.248 1.248 0 0 0-.392-1.082l-.001-.001l-4.571-4.247a1.265 1.265 0 0 1 .648-2.17l.007-.001l5.987-1.108c.421-.078.765-.355.935-.727l.003-.008L10.478.746a1.272 1.272 0 0 1 2.271-.087l.003.007l2.881 5.471c.197.365.558.62.981.666h.006l6.045.681a1.265 1.265 0 0 1 .811 2.119l.001-.001l-4.27 4.562a1.251 1.251 0 0 0-.315 1.116l-.001-.008l1.52 7.453a.61.61 0 0 1-.86.683l.004.002z" />
+                                </svg>
+                                <span>1</span>
+                            </div>
+
+                            <div class="star swr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#0f172a"
+                                        d="m19.555 23.411l-6.664-3.285a1.261 1.261 0 0 0-1.202.045l.006-.003l-6.416 3.75a.61.61 0 0 1-.902-.626v.003l.994-7.542a1.248 1.248 0 0 0-.392-1.082l-.001-.001l-4.571-4.247a1.265 1.265 0 0 1 .648-2.17l.007-.001l5.987-1.108c.421-.078.765-.355.935-.727l.003-.008L10.478.746a1.272 1.272 0 0 1 2.271-.087l.003.007l2.881 5.471c.197.365.558.62.981.666h.006l6.045.681a1.265 1.265 0 0 1 .811 2.119l.001-.001l-4.27 4.562a1.251 1.251 0 0 0-.315 1.116l-.001-.008l1.52 7.453a.61.61 0 0 1-.86.683l.004.002z" />
+                                </svg>
+                                <span>2</span>
+                            </div>
+
+                            <div class="star swr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#0f172a"
+                                        d="m19.555 23.411l-6.664-3.285a1.261 1.261 0 0 0-1.202.045l.006-.003l-6.416 3.75a.61.61 0 0 1-.902-.626v.003l.994-7.542a1.248 1.248 0 0 0-.392-1.082l-.001-.001l-4.571-4.247a1.265 1.265 0 0 1 .648-2.17l.007-.001l5.987-1.108c.421-.078.765-.355.935-.727l.003-.008L10.478.746a1.272 1.272 0 0 1 2.271-.087l.003.007l2.881 5.471c.197.365.558.62.981.666h.006l6.045.681a1.265 1.265 0 0 1 .811 2.119l.001-.001l-4.27 4.562a1.251 1.251 0 0 0-.315 1.116l-.001-.008l1.52 7.453a.61.61 0 0 1-.86.683l.004.002z" />
+                                </svg>
+                                <span>3</span>
+                            </div>
+
+                            <div class="star swr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#0f172a"
+                                        d="m19.555 23.411l-6.664-3.285a1.261 1.261 0 0 0-1.202.045l.006-.003l-6.416 3.75a.61.61 0 0 1-.902-.626v.003l.994-7.542a1.248 1.248 0 0 0-.392-1.082l-.001-.001l-4.571-4.247a1.265 1.265 0 0 1 .648-2.17l.007-.001l5.987-1.108c.421-.078.765-.355.935-.727l.003-.008L10.478.746a1.272 1.272 0 0 1 2.271-.087l.003.007l2.881 5.471c.197.365.558.62.981.666h.006l6.045.681a1.265 1.265 0 0 1 .811 2.119l.001-.001l-4.27 4.562a1.251 1.251 0 0 0-.315 1.116l-.001-.008l1.52 7.453a.61.61 0 0 1-.86.683l.004.002z" />
+                                </svg>
+                                <span>4</span>
+                            </div>
+
+                            <div class="star swr-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path fill="#0f172a"
+                                        d="m19.555 23.411l-6.664-3.285a1.261 1.261 0 0 0-1.202.045l.006-.003l-6.416 3.75a.61.61 0 0 1-.902-.626v.003l.994-7.542a1.248 1.248 0 0 0-.392-1.082l-.001-.001l-4.571-4.247a1.265 1.265 0 0 1 .648-2.17l.007-.001l5.987-1.108c.421-.078.765-.355.935-.727l.003-.008L10.478.746a1.272 1.272 0 0 1 2.271-.087l.003.007l2.881 5.471c.197.365.558.62.981.666h.006l6.045.681a1.265 1.265 0 0 1 .811 2.119l.001-.001l-4.27 4.562a1.251 1.251 0 0 0-.315 1.116l-.001-.008l1.52 7.453a.61.61 0 0 1-.86.683l.004.002z" />
+                                </svg>
+                                <span>5</span>
+                            </div>
+                            <input type="text" id="read-rating" name="user-rating" required style="display: none;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit">Submit</button>
+                    <div class="read-privacy-policy">
+                        <a href="privacy-policy.html">read privacy policy</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- <footer>
+        <div class="read-privacy-policy">
+            <a href="privacy-policy.html">read privacy policy</a>
+        </div>
+    </footer> -->
+
+    <script>
+        const userAvtar = document.querySelector(".user-avatar img");
+        const inputf = document.querySelector('#user-avatar');
+
+        inputf.addEventListener("change", () => {
+            userAvtar.src = URL.createObjectURL(inputf.files[0]);
+        });
+
+    </script>
+
+    <script>
+        const ratingNumber = document.querySelectorAll(".stars .star");
+        const readRatingNumber = document.querySelector(".stars #read-rating");
+
+        ratingNumber.forEach(star => {
+            star.addEventListener("click", () => {
+                const starValue = star.querySelector("span").textContent;
+                readRatingNumber.value = starValue;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

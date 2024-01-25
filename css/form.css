@@ -1,0 +1,231 @@
+main {
+  width: 100%;
+  margin: auto;
+}
+
+body > header {
+  max-width: 100%;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 10%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+body main {
+  width: 90%;
+  margin-top: 2rem;
+  padding: 0.2rem;
+  background-color: var(--bg-color);
+}
+
+main > header {
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+main .review-column {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.review-column picture {
+  max-width: 50%;
+  height: 31.25rem;
+  margin: 0;
+  background-color: red;
+  overflow: hidden;
+}
+
+.review-column picture img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.review-column form {
+  padding: 1rem 0rem 1rem 2rem;
+}
+
+form .input-box {
+  width: 100%;
+}
+
+form .input-box:not(:first-child) {
+  margin-top: 1rem;
+}
+
+form :is(.input-box label, .select-box label) {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(primary-color);
+}
+
+form :is(.input-box input, .input-box textarea) {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 1rem;
+  border: 1px solid var(--shadow-color);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  outline: none;
+}
+
+form .form-column {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+form .user-avatar {
+  width: 70%;
+}
+
+form .user-avatar input {
+  display: none;
+}
+
+form .user-avatar figure {
+  width: 9.375rem;
+  height: 9.375rem;
+  margin: 0;
+  overflow: hidden;
+  border: inset 3px var(--primary-color);
+  border-radius: 50%;
+}
+
+form .user-avatar img {
+  width: 170px;
+  height: 170px;
+  display: block;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+.user-avatar label {
+  position: absolute;
+  bottom: 0;
+  width: fit-content;
+  height: fit-content;
+  color: var(--white-color);
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  background-color: #aeaeae;
+  cursor: pointer;
+}
+
+.form-column .rating-star {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 30%;
+}
+
+.rating-star header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.form-column .star {
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.form-column :is(.star:hover path, .star:hover span) {
+  fill: var(--secondary-color);
+  transition: fill 0.2s linear;
+}
+
+.form-column .star:focus path {
+  background-color: red;
+}
+
+.star span {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  color: white;
+  transform: translate(-58%, -50%);
+  /* display: block;
+    width: 100%;
+    height: 100%; */
+}
+
+form .form-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+form button {
+  color: var(--white-color);
+  background-color: var(--secondary-color) !important;
+  padding: 0.35rem 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1280px) {
+  body main {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+  main .review-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .review-column picture {
+    max-width: 100%;
+    height: 31.25rem;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .review-column form {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  form :is(.input-box label, .select-box label) {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(primary-color);
+  }
+
+  .review-column picture {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  form .user-avatar figure {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 1.5rem;
+  }
+
+.user-avatar label {
+  font-size: 0.8rem;
+}
+}
